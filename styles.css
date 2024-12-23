@@ -7,3 +7,77 @@
     font-weight: 600;
 }
 
+/* Hide scrollbar for all browsers */
+html {
+    overflow: -moz-hidden; /* Firefox */
+    overflow: hidden; /* Hide scrollbar for other browsers */
+}
+
+body {
+    overflow: hidden; /* Prevent scrolling */
+}
+
+/* Hide scrollbar for webkit browsers (Chrome, Safari) */
+body::-webkit-scrollbar {
+    display: none; /* Hide scrollbar */
+}
+
+body {
+    font-family: 'Noto Sans', Arial, sans-serif;
+    background-color: #0e1621;
+    color: #f9ffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+body.light {
+    background: linear-gradient(135deg, #dbddbb, #6ba587, #d5d88d, #88b884);
+}
+
+#themeButton {
+    display: none;
+    position: absolute;
+    top: 11px;
+    left: 170px;
+    padding: 10px;
+    color: #17212b;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    z-index: 1000; /* Ensure it's above other elements */
+    background-color: #f9ffff; /* Default background color */
+}
+
+/* Change background color of the theme button in light theme */
+body.light #themeButton {
+    background-color: #17212b; /* Change background color when in light theme */
+}
+
+/* Change button text color in light theme */
+body.light #themeButton {
+    color: #f9ffff; /* Change text color to match the default button color */
+}
+
+/* Change background color of nav-container and footer in light mode */
+body.light .nav-container, 
+body.light .footer {
+    background-color: #f9ffff;
+}
+
+/* Hide .tgme_background_wrap by default, show only in light theme */
+.tgme_background_wrap {
+    display: none;
+}
+body.light .tgme_background_wrap {
+    display: block; /* Show only in light theme */
+}
+
+/* Change background color in light theme */
+body.light .message,
+body.light .date {
+    background-color: rgba(100, 144, 101, 0.7); /* Change to this color when in light theme */
+}
+
