@@ -126,3 +126,9 @@ function editJoined(element) {
     });
 }
 
+function saveJoined(newText, element, originalText) {
+    if (newText.trim() === "") {
+        newText = originalText; // Keep original if empty
+    }
+    element.innerHTML = newText; // Restore the new joined text
+}
