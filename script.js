@@ -8,3 +8,10 @@ function setCurrentDatePlaceholder() {
 
 // Call the function on page load
 window.onload = setCurrentDatePlaceholder;
+
+// Function to toggle theme button visibility
+function toggleThemeButton() {
+    const themeButton = document.getElementById('themeButton');
+    themeButton.style.display = themeButton.style.display === 'none' ? 'inline-block' : 'none';
+}
+
