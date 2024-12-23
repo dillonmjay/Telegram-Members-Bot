@@ -3,9 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>telmem</title>
+    <link rel="icon" href="images/magnifine_glass.png" type="image/png">
+    <link rel="stylesheet" href="styles.css">
 </head>
-<body>
-    
-</body>
+    <body>
+        <div class="tgme_background_wrap">
+            <canvas id="tgme_background" class="tgme_background default" width="50" height="50" data-colors="dbddbb,6ba587,d5d88d,88b884"></canvas>
+            <div class="tgme_background_pattern default"></div>
+        </div>
+
+        <div class="nav-container">
+            <div class="nav-left" onclick="toggleThemeButton()">
+                <img class="nav-back" src="images/back_arrow.png">
+                <span class="nav-title">Selected actions</span>
+            </div>
+            <div class="nav-right" onclick="toggleInputContainer()">
+                <img class="nav-icon" src="images/magnifine_glass.png">
+                <span class="nav-filter">Filter</span>
+            </div>
+        </div>
+
+        <button id="themeButton" onclick="toggleTheme()">Light</button>
+
+        <div class="input-container" id="inputContainer">
+            <input type="number" id="messageCount" placeholder="Number of Members" min="1" max="100" />
+            <input type="text" id="dateInput" placeholder="Date (e.g., May 18)" />
+            <button onclick="generateMessages()">Generate</button>
+        </div>
+
+        <div class="chat-container" id="chatContainer"></div>
+
+        <div class="footer">
+            <a href="/index.html">What is this?</a>
+        </div>
+    </body>
 </html>
