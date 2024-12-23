@@ -96,3 +96,11 @@ function editName(element) {
         }
     });
 }
+
+function saveName(newName, element, originalName) {
+    if (newName.trim() === "") {
+        newName = originalName;
+    }
+    element.innerHTML = `${newName} ${originalName.includes("Promoter") ? "Promoter " : ""}`;
+}
+
