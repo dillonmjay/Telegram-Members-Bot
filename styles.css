@@ -242,3 +242,54 @@ canvas {
     display: inline-block;
     vertical-align: baseline;
 }
+
+/* Input container styling */
+.input-container {
+    display: none; /* Hidden by default */
+    position: fixed; /* Set position to absolute */
+    top: 70px; /* Adjust as needed */
+    right: 20px; /* Adjust as needed */
+    z-index: 1; /* Ensure it's above other elements */
+    margin-bottom: 20px;
+    background-color: #f9ffff; /* Background color for the input container */
+    border-radius: 8px; /* Rounded corners */
+    padding: 20px; /* Spacing inside the container */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+    display: flex; /* Flexbox layout */
+    flex-direction: column; /* Column direction */
+    gap: 10px; /* Spacing between elements */
+}
+
+/* Input styling */
+.input-container input {
+    padding: 10px; /* Padding inside the input */
+    border: 1px solid #ccc; /* Border color */
+    border-radius: 5px; /* Rounded corners */
+    font-size: 14px; /* Font size */
+    transition: border-color 0.3s; /* Smooth transition */
+}
+
+.input-container input:focus {
+    border-color: #5b90d5; /* Change border color on focus */
+    outline: none; /* Remove default outline */
+}
+
+/* Button styling */
+.input-container button {
+    padding: 10px; /* Padding inside the button */
+    background-color: #17212b; /* Background color */
+    color: white; /* Text color */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer on hover */
+    font-size: 16px; /* Font size */
+    transition: background-color 0.3s; /* Smooth transition */
+}
+
+.input-container button:hover {
+    background-color: #5b90d5; /* Change background color on hover */
+}
+
+.input-container button:active {
+    background-color: #5b90d5; /* Darker color when pressed */
+}
