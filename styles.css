@@ -190,3 +190,16 @@ body.light .date {
     cursor: pointer; /* Change cursor to indicate editability */
 }
 
+.input-container {
+    display: flex;
+    position: fixed; /* Set position to absolute */
+    top: 20px; /* Adjust as needed */
+    right: 20px; /* Adjust as needed */
+    z-index: 1; /* Ensure it's above other elements */
+    margin-bottom: 20px;
+}
+
+.input-container input {
+    margin-right: 10px;
+}
+
