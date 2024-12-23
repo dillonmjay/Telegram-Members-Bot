@@ -123,3 +123,49 @@ body.light .date {
     margin-right: 10px;
 }
 
+.chat-container {
+    position: absolute;
+    background-color: transparent;
+    width: 500px;
+    height: 100vh; /* Set a fixed height */
+    display: flex;
+    flex-direction: column; /* Align content in the container */
+    align-items: center; /* Center horizontally */
+    overflow-y: auto; /* Enable vertical scrolling */
+    padding: 10px; /* Add padding for better appearance */
+    margin-bottom: 50px;
+    padding-top: 25px;
+    padding-bottom: 110px;
+    bottom: 0;
+    top: 0;
+    margin-top: 50px; /* Add top margin to avoid overlap with the input container */
+    left: 50%; /* Align horizontally */
+    transform: translateX(-50%); /* Center horizontally */
+    z-index: 0;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.chat-container::-webkit-scrollbar {
+    display: none; /* Hide scrollbar */
+}
+
+/* Hide scrollbar for Firefox */
+.chat-container {
+    scrollbar-width: none; /* Hide scrollbar */
+}
+
+.message-group {
+    margin: 0;
+    text-align: center; /* Center the messages */
+}
+
+.message, .date {
+    display: inline-block; /* Allows the width to fit the content */
+    background-color: #1f2b39;
+    padding: 7px 15px;
+    border-radius: 20px;
+    font-size: 14px;
+    margin-bottom: 14px;
+    text-align: center;
+}
+
