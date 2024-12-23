@@ -104,3 +104,25 @@ function saveName(newName, element, originalName) {
     element.innerHTML = `${newName} ${originalName.includes("Promoter") ? "Promoter " : ""}`;
 }
 
+function editJoined(element) {
+    const originalText = element.innerText;
+    const input = document.createElement("input");
+    input.type = "text";
+    input.value = originalText;
+    input.classList.add("joined-input");
+
+    element.innerHTML = "";
+    element.appendChild(input);
+    input.focus();
+
+    input.addEventListener("blur", function() {
+        saveJoined(input.value, element, originalText);
+    });
+
+    input.addEventListener("keydown", function(event) {
+        if (event.key === "Enter") {
+            saveJoined(input.value, element, originalText);
+        }
+    });
+}
+
