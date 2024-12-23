@@ -7,5 +7,5 @@
 # Dark Mode
 <img src="images/ss5.png"></img>
 # Mobile Devices
-<img src="images/ss3.png" style="height: 600px; width: auto;"></img>
-<img src="images/ss4.png" style="height: 600px; width: auto;"></img>
+<img src="images/ss3.png" style="height: 550px; width: auto;"></img>
+<img src="images/ss4.png" style="height: 550px; width: auto;"></img>
