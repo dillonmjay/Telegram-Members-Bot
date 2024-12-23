@@ -31,4 +31,19 @@ function toggleInputContainer() {
     inputContainer.style.display = inputContainer.style.display === 'none' ? 'flex' : 'none';
 }
 
+// Function to toggle between dark and light themes
+function toggleTheme() {
+    document.body.classList.toggle('light');
+
+    // Change button text based on theme
+    const themeButton = document.getElementById('themeButton');
+    if (document.body.classList.contains('light')) {
+        themeButton.textContent = 'Dark'; // Change to "Dark" when in light theme
+    } else {
+        themeButton.textContent = 'Light'; // Change to "Light" when in dark theme
+    }
+
+    // Hide the theme button after selecting the theme
+    themeButton.style.display = 'none'; // Hide the button again
+}
 
