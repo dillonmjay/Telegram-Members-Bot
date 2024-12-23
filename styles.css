@@ -169,3 +169,20 @@ body.light .date {
     text-align: center;
 }
 
+.footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #17212b;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    box-shadow: 0px -2px 5px rgba(0, 0, 0, 0.1); /* Added shadow */
+}
+
+.footer a {
+    color: #5b90d5;
+    text-decoration: none;
+    font-size: 14px;
+    background: none; /* Removed background color */
+}
+
