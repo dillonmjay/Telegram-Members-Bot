@@ -19,7 +19,6 @@ const names = [
     "Kiran Patel", "Sofia Kim", "Giovanni Verdi", "Maya Singh", "Samuel Jackson", "Layla Nguyen", "Rafael Santos",
     "Zoe Taylor", "Nadia Ali", "Thabo Mokoena", "Sophie Dubois", "Ravi Sharma", "Bianca DiMarco", "Khaled Said",
     "Freya Anderson", "Tariq Khan", "Ana Beatriz", "Victor Hugo", "Natalia Romanova", "Elias Bergström",
-    // Additional names
     "Aisha Al-Farsi", "Liam Johnson", "Fatima Al-Mansoori", "Yuki Nakamura", "John Smith", 
     "Sofia Gonzalez", "Emeka Nwosu", "Anjali Patel", "Chloe Williams", "Ali Hassan", 
     "Maximiliano Ortega", "Zara Ahmed", "Dmitri Petrov", "Xiaoli Zhang", "Elena Ivanova", 
