@@ -207,6 +207,7 @@ body.light .date {
     opacity: 0.3;
     background-image: url(images/pattern.svg);
 }
+
 .tgme_background_pattern {
     position: absolute;
     left: 0;
@@ -217,6 +218,7 @@ body.light .date {
     background: center repeat;
     background-size: 420px auto;
 }
+
 .tgme_background {
     position: absolute;
     left: 0;
@@ -224,6 +226,7 @@ body.light .date {
     width: 100%;
     height:100%;
 }
+
 .tgme_background_wrap {
     position: fixed;
     left: 0;
@@ -234,3 +237,4 @@ body.light .date {
     z-index: -1;
     background: var(--body-bg);
 }
+
