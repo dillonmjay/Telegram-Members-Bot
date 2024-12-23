@@ -25,4 +25,10 @@ function toggleThemeButton() {
     themeButton.style.display = themeButton.style.display === 'none' ? 'inline-block' : 'none';
 }
 
+// Function to toggle input container visibility
+function toggleInputContainer() {
+    const inputContainer = document.getElementById('inputContainer');
+    inputContainer.style.display = inputContainer.style.display === 'none' ? 'flex' : 'none';
+}
+
 
