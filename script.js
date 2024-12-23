@@ -47,3 +47,31 @@ function toggleTheme() {
     themeButton.style.display = 'none'; // Hide the button again
 }
 
+function getRandomNames(count) {
+    const shuffled = names.sort(() => 0.5 - Math.random());
+    return shuffled.slice(0, count);
+}
+
+function generateMessages() {
+    const chatContainer = document.getElementById("chatContainer");
+    chatContainer.innerHTML = ''; // Clear existing messages
+    const messageCount = parseInt(document.getElementById("messageCount").value) || 10; // Default to 10
+    const dateInput = document.getElementById("dateInput").value || "Default Date";
+
+    const randomNames = getRandomNames(messageCount);
+    const messagesHTML = randomNames.map((name, index) => {
+        const isPromoter = (index < 7) && (Math.random() < (Math.random() < 0.5 ? 0.5 : 1));
+        const promoterText = isPromoter ? "Promoter " : "";
+        return `<div class="message">
+            <span class="name editable-name" onclick="editName(this)">${name} ${promoterText}</span>
+            <span class="joined editable-joined" onclick="editJoined(this)">joined the channel via Dillon</span>
+        </div>`;
+    }).join('');
+
+    chatContainer.innerHTML = `<div class="date">${dateInput}</div><div class="message-group">${messagesHTML}</div>`;
+
+    // Hide the input container after generating messages
+    const inputContainer = document.getElementById('inputContainer');
+    inputContainer.style.display = 'none';
+}
+
