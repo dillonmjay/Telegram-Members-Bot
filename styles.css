@@ -186,3 +186,7 @@ body.light .date {
     background: none; /* Removed background color */
 }
 
+.editable-name {
+    cursor: pointer; /* Change cursor to indicate editability */
+}
+
