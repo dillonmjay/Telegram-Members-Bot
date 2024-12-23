@@ -75,3 +75,24 @@ function generateMessages() {
     inputContainer.style.display = 'none';
 }
 
+function editName(element) {
+    const originalName = element.innerText;
+    const input = document.createElement("input");
+    input.type = "text";
+    input.value = originalName.replace("Promoter", "").trim();
+    input.classList.add("name-input");
+
+    element.innerHTML = "";
+    element.appendChild(input);
+    input.focus();
+
+    input.addEventListener("blur", function() {
+        saveName(input.value, element, originalName);
+    });
+
+    input.addEventListener("keydown", function(event) {
+        if (event.key === "Enter") {
+            saveName(input.value, element, originalName);
+        }
+    });
+}
