@@ -6,3 +6,5 @@ function setCurrentDatePlaceholder() {
     dateInput.placeholder = `Date (e.g., ${currentDate})`;
 }
 
+// Call the function on page load
+window.onload = setCurrentDatePlaceholder;
