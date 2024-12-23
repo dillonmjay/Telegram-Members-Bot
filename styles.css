@@ -238,3 +238,7 @@ body.light .date {
     background: var(--body-bg);
 }
 
+canvas {
+    display: inline-block;
+    vertical-align: baseline;
+}
